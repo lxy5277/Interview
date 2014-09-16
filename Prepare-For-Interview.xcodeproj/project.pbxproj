@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06B2EEF119C40B490032AEB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B2EEF019C40B490032AEB4 /* Foundation.framework */; };
+		06B2EEF319C40B490032AEB4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B2EEF219C40B490032AEB4 /* CoreGraphics.framework */; };
+		06B2EEF519C40B490032AEB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B2EEF419C40B490032AEB4 /* UIKit.framework */; };
+		06B2EEFB19C40B490032AEB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06B2EEF919C40B490032AEB4 /* InfoPlist.strings */; };
+		06B2EEFD19C40B490032AEB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B2EEFC19C40B490032AEB4 /* main.m */; };
+		06B2EF0119C40B490032AEB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B2EF0019C40B490032AEB4 /* AppDelegate.m */; };
+		06B2EF0419C40B490032AEB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B2EF0219C40B490032AEB4 /* Main.storyboard */; };
+		06B2EF0719C40B490032AEB4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B2EF0619C40B490032AEB4 /* ViewController.m */; };
+		06B2EF0919C40B490032AEB4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B2EF0819C40B490032AEB4 /* Images.xcassets */; };
+		06B2EF1019C40B490032AEB4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B2EF0F19C40B490032AEB4 /* XCTest.framework */; };
+		06B2EF1119C40B490032AEB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B2EEF019C40B490032AEB4 /* Foundation.framework */; };
+		06B2EF1219C40B490032AEB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B2EEF419C40B490032AEB4 /* UIKit.framework */; };
+		06B2EF1A19C40B490032AEB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06B2EF1819C40B490032AEB4 /* InfoPlist.strings */; };
+		06B2EF1C19C40B490032AEB4 /* Prepare_For_InterviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B2EF1B19C40B490032AEB4 /* Prepare_For_InterviewTests.m */; };
+		06B2EF2819C40B920032AEB4 /* ThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B2EF2719C40B920032AEB4 /* ThreadVC.m */; };
+		06B2EF2C19C40C570032AEB4 /* BlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B2EF2B19C40C570032AEB4 /* BlockVC.m */; };
+		06B2EF2E19C40CA80032AEB4 /* Objc的对象模型 in Resources */ = {isa = PBXBuildFile; fileRef = 06B2EF2D19C40CA80032AEB4 /* Objc的对象模型 */; };
+		06E31C1119C591FD00020D42 /* Block的底层实现结构 in Resources */ = {isa = PBXBuildFile; fileRef = 06E31C0F19C591FD00020D42 /* Block的底层实现结构 */; };
+		06E31C1519C59B6B00020D42 /* block.c in Sources */ = {isa = PBXBuildFile; fileRef = 06E31C1319C59B6B00020D42 /* block.c */; };
+		06E31C1819C5BC5600020D42 /* 消息发送和转发 in Resources */ = {isa = PBXBuildFile; fileRef = 06E31C1619C5BC5600020D42 /* 消息发送和转发 */; };
+		06E31C1C19C5BF5700020D42 /* MessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E31C1B19C5BF5700020D42 /* MessageVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06B2EF1319C40B490032AEB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06B2EEE519C40B490032AEB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06B2EEEC19C40B490032AEB4;
+			remoteInfo = "Prepare-For-Interview";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06B2EEED19C40B490032AEB4 /* Prepare-For-Interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prepare-For-Interview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06B2EEF019C40B490032AEB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		06B2EEF219C40B490032AEB4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		06B2EEF419C40B490032AEB4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		06B2EEF819C40B490032AEB4 /* Prepare-For-Interview-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Prepare-For-Interview-Info.plist"; sourceTree = "<group>"; };
+		06B2EEFA19C40B490032AEB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		06B2EEFC19C40B490032AEB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		06B2EEFE19C40B490032AEB4 /* Prepare-For-Interview-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Prepare-For-Interview-Prefix.pch"; sourceTree = "<group>"; };
+		06B2EEFF19C40B490032AEB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		06B2EF0019C40B490032AEB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		06B2EF0319C40B490032AEB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		06B2EF0519C40B490032AEB4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		06B2EF0619C40B490032AEB4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		06B2EF0819C40B490032AEB4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		06B2EF0E19C40B490032AEB4 /* Prepare-For-InterviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prepare-For-InterviewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06B2EF0F19C40B490032AEB4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		06B2EF1719C40B490032AEB4 /* Prepare-For-InterviewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Prepare-For-InterviewTests-Info.plist"; sourceTree = "<group>"; };
+		06B2EF1919C40B490032AEB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		06B2EF1B19C40B490032AEB4 /* Prepare_For_InterviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Prepare_For_InterviewTests.m; sourceTree = "<group>"; };
+		06B2EF2619C40B920032AEB4 /* ThreadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadVC.h; sourceTree = "<group>"; };
+		06B2EF2719C40B920032AEB4 /* ThreadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadVC.m; sourceTree = "<group>"; };
+		06B2EF2A19C40C570032AEB4 /* BlockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockVC.h; sourceTree = "<group>"; };
+		06B2EF2B19C40C570032AEB4 /* BlockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockVC.m; sourceTree = "<group>"; };
+		06B2EF2D19C40CA80032AEB4 /* Objc的对象模型 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Objc的对象模型"; sourceTree = "<group>"; };
+		06E31C0F19C591FD00020D42 /* Block的底层实现结构 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Block的底层实现结构"; sourceTree = "<group>"; };
+		06E31C1319C59B6B00020D42 /* block.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = block.c; sourceTree = "<group>"; };
+		06E31C1419C59B6B00020D42 /* block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = block.h; sourceTree = "<group>"; };
+		06E31C1619C5BC5600020D42 /* 消息发送和转发 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "消息发送和转发"; sourceTree = "<group>"; };
+		06E31C1A19C5BF5700020D42 /* MessageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageVC.h; sourceTree = "<group>"; };
+		06E31C1B19C5BF5700020D42 /* MessageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06B2EEEA19C40B490032AEB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B2EEF319C40B490032AEB4 /* CoreGraphics.framework in Frameworks */,
+				06B2EEF519C40B490032AEB4 /* UIKit.framework in Frameworks */,
+				06B2EEF119C40B490032AEB4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06B2EF0B19C40B490032AEB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B2EF1019C40B490032AEB4 /* XCTest.framework in Frameworks */,
+				06B2EF1219C40B490032AEB4 /* UIKit.framework in Frameworks */,
+				06B2EF1119C40B490032AEB4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06B2EEE419C40B490032AEB4 = {
+			isa = PBXGroup;
+			children = (
+				06B2EEF619C40B490032AEB4 /* Prepare-For-Interview */,
+				06B2EF1519C40B490032AEB4 /* Prepare-For-InterviewTests */,
+				06B2EEEF19C40B490032AEB4 /* Frameworks */,
+				06B2EEEE19C40B490032AEB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06B2EEEE19C40B490032AEB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06B2EEED19C40B490032AEB4 /* Prepare-For-Interview.app */,
+				06B2EF0E19C40B490032AEB4 /* Prepare-For-InterviewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06B2EEEF19C40B490032AEB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06B2EEF019C40B490032AEB4 /* Foundation.framework */,
+				06B2EEF219C40B490032AEB4 /* CoreGraphics.framework */,
+				06B2EEF419C40B490032AEB4 /* UIKit.framework */,
+				06B2EF0F19C40B490032AEB4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		06B2EEF619C40B490032AEB4 /* Prepare-For-Interview */ = {
+			isa = PBXGroup;
+			children = (
+				06B2EF2919C40C120032AEB4 /* Runtime */,
+				06B2EF2519C40B7D0032AEB4 /* Multhreading */,
+				06B2EEFF19C40B490032AEB4 /* AppDelegate.h */,
+				06B2EF0019C40B490032AEB4 /* AppDelegate.m */,
+				06B2EF0219C40B490032AEB4 /* Main.storyboard */,
+				06B2EF0519C40B490032AEB4 /* ViewController.h */,
+				06B2EF0619C40B490032AEB4 /* ViewController.m */,
+				06B2EF0819C40B490032AEB4 /* Images.xcassets */,
+				06B2EEF719C40B490032AEB4 /* Supporting Files */,
+			);
+			path = "Prepare-For-Interview";
+			sourceTree = "<group>";
+		};
+		06B2EEF719C40B490032AEB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06B2EEF819C40B490032AEB4 /* Prepare-For-Interview-Info.plist */,
+				06B2EEF919C40B490032AEB4 /* InfoPlist.strings */,
+				06B2EEFC19C40B490032AEB4 /* main.m */,
+				06B2EEFE19C40B490032AEB4 /* Prepare-For-Interview-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06B2EF1519C40B490032AEB4 /* Prepare-For-InterviewTests */ = {
+			isa = PBXGroup;
+			children = (
+				06B2EF1B19C40B490032AEB4 /* Prepare_For_InterviewTests.m */,
+				06B2EF1619C40B490032AEB4 /* Supporting Files */,
+			);
+			path = "Prepare-For-InterviewTests";
+			sourceTree = "<group>";
+		};
+		06B2EF1619C40B490032AEB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06B2EF1719C40B490032AEB4 /* Prepare-For-InterviewTests-Info.plist */,
+				06B2EF1819C40B490032AEB4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06B2EF2519C40B7D0032AEB4 /* Multhreading */ = {
+			isa = PBXGroup;
+			children = (
+				06B2EF2619C40B920032AEB4 /* ThreadVC.h */,
+				06B2EF2719C40B920032AEB4 /* ThreadVC.m */,
+			);
+			path = Multhreading;
+			sourceTree = "<group>";
+		};
+		06B2EF2919C40C120032AEB4 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				06B2EF2A19C40C570032AEB4 /* BlockVC.h */,
+				06B2EF2B19C40C570032AEB4 /* BlockVC.m */,
+				06E31C1A19C5BF5700020D42 /* MessageVC.h */,
+				06E31C1B19C5BF5700020D42 /* MessageVC.m */,
+				06E31C1319C59B6B00020D42 /* block.c */,
+				06E31C1419C59B6B00020D42 /* block.h */,
+				06B2EF2D19C40CA80032AEB4 /* Objc的对象模型 */,
+				06E31C0F19C591FD00020D42 /* Block的底层实现结构 */,
+				06E31C1619C5BC5600020D42 /* 消息发送和转发 */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06B2EEEC19C40B490032AEB4 /* Prepare-For-Interview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06B2EF1F19C40B490032AEB4 /* Build configuration list for PBXNativeTarget "Prepare-For-Interview" */;
+			buildPhases = (
+				06B2EEE919C40B490032AEB4 /* Sources */,
+				06B2EEEA19C40B490032AEB4 /* Frameworks */,
+				06B2EEEB19C40B490032AEB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Prepare-For-Interview";
+			productName = "Prepare-For-Interview";
+			productReference = 06B2EEED19C40B490032AEB4 /* Prepare-For-Interview.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06B2EF0D19C40B490032AEB4 /* Prepare-For-InterviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06B2EF2219C40B490032AEB4 /* Build configuration list for PBXNativeTarget "Prepare-For-InterviewTests" */;
+			buildPhases = (
+				06B2EF0A19C40B490032AEB4 /* Sources */,
+				06B2EF0B19C40B490032AEB4 /* Frameworks */,
+				06B2EF0C19C40B490032AEB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06B2EF1419C40B490032AEB4 /* PBXTargetDependency */,
+			);
+			name = "Prepare-For-InterviewTests";
+			productName = "Prepare-For-InterviewTests";
+			productReference = 06B2EF0E19C40B490032AEB4 /* Prepare-For-InterviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06B2EEE519C40B490032AEB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = LiuXiaoyu;
+				TargetAttributes = {
+					06B2EF0D19C40B490032AEB4 = {
+						TestTargetID = 06B2EEEC19C40B490032AEB4;
+					};
+				};
+			};
+			buildConfigurationList = 06B2EEE819C40B490032AEB4 /* Build configuration list for PBXProject "Prepare-For-Interview" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06B2EEE419C40B490032AEB4;
+			productRefGroup = 06B2EEEE19C40B490032AEB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06B2EEEC19C40B490032AEB4 /* Prepare-For-Interview */,
+				06B2EF0D19C40B490032AEB4 /* Prepare-For-InterviewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06B2EEEB19C40B490032AEB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B2EF0919C40B490032AEB4 /* Images.xcassets in Resources */,
+				06B2EF2E19C40CA80032AEB4 /* Objc的对象模型 in Resources */,
+				06B2EEFB19C40B490032AEB4 /* InfoPlist.strings in Resources */,
+				06E31C1819C5BC5600020D42 /* 消息发送和转发 in Resources */,
+				06E31C1119C591FD00020D42 /* Block的底层实现结构 in Resources */,
+				06B2EF0419C40B490032AEB4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06B2EF0C19C40B490032AEB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B2EF1A19C40B490032AEB4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06B2EEE919C40B490032AEB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B2EF2C19C40C570032AEB4 /* BlockVC.m in Sources */,
+				06B2EF0719C40B490032AEB4 /* ViewController.m in Sources */,
+				06E31C1C19C5BF5700020D42 /* MessageVC.m in Sources */,
+				06B2EF0119C40B490032AEB4 /* AppDelegate.m in Sources */,
+				06E31C1519C59B6B00020D42 /* block.c in Sources */,
+				06B2EF2819C40B920032AEB4 /* ThreadVC.m in Sources */,
+				06B2EEFD19C40B490032AEB4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06B2EF0A19C40B490032AEB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B2EF1C19C40B490032AEB4 /* Prepare_For_InterviewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06B2EF1419C40B490032AEB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06B2EEEC19C40B490032AEB4 /* Prepare-For-Interview */;
+			targetProxy = 06B2EF1319C40B490032AEB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		06B2EEF919C40B490032AEB4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06B2EEFA19C40B490032AEB4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		06B2EF0219C40B490032AEB4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06B2EF0319C40B490032AEB4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		06B2EF1819C40B490032AEB4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06B2EF1919C40B490032AEB4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06B2EF1D19C40B490032AEB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		06B2EF1E19C40B490032AEB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06B2EF2019C40B490032AEB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Prepare-For-Interview/Prepare-For-Interview-Prefix.pch";
+				INFOPLIST_FILE = "Prepare-For-Interview/Prepare-For-Interview-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		06B2EF2119C40B490032AEB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Prepare-For-Interview/Prepare-For-Interview-Prefix.pch";
+				INFOPLIST_FILE = "Prepare-For-Interview/Prepare-For-Interview-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		06B2EF2319C40B490032AEB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Prepare-For-Interview.app/Prepare-For-Interview";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Prepare-For-Interview/Prepare-For-Interview-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Prepare-For-InterviewTests/Prepare-For-InterviewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		06B2EF2419C40B490032AEB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Prepare-For-Interview.app/Prepare-For-Interview";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Prepare-For-Interview/Prepare-For-Interview-Prefix.pch";
+				INFOPLIST_FILE = "Prepare-For-InterviewTests/Prepare-For-InterviewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06B2EEE819C40B490032AEB4 /* Build configuration list for PBXProject "Prepare-For-Interview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06B2EF1D19C40B490032AEB4 /* Debug */,
+				06B2EF1E19C40B490032AEB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06B2EF1F19C40B490032AEB4 /* Build configuration list for PBXNativeTarget "Prepare-For-Interview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06B2EF2019C40B490032AEB4 /* Debug */,
+				06B2EF2119C40B490032AEB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06B2EF2219C40B490032AEB4 /* Build configuration list for PBXNativeTarget "Prepare-For-InterviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06B2EF2319C40B490032AEB4 /* Debug */,
+				06B2EF2419C40B490032AEB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06B2EEE519C40B490032AEB4 /* Project object */;
+}

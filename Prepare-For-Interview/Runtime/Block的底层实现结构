@@ -1,0 +1,38 @@
+Block的内部实现数据结构介绍
+
+Block的数据结构定义
+Block_layout
+    (void *)isa
+    (int)flags
+    (int)reserved
+    (void *(void *,...))invoke                      Block_descriptor
+    (struct Block_descriptor *)descriptor   --->        (unsigned long int)reserved
+    variables                                           (unsigned long int)size
+                                                        (void *(void *,void *))copy
+                                                        (void *(void *))dispose
+
+
+在OC中，Block有三种类型：
+1、_NSConcreteGlobalBlock
+全局的静态Block
+不会访问任何外部变量
+
+2、_NSConcreteStackBlock
+保存在栈中的block
+当函数返回时会被销毁
+
+3、_NSConcreteMallocBlock
+保存在堆中的block
+当引用计数为0时会被销毁
+
+通过一个oc源文件转成.cpp后
+1、一个block实际上是一个对象。
+它主要由一个isa指针，一个impl和一个descriptor组成。
+
+2、因为再转换文件的时候并未开启ARC，还有clang和LLVM的不同，现在的isa指针指向的是
+_NSConcreteStackBlock。但在LLVM的实现中，开启了ARC后，isa指针应该指向GlobalBlock。
+
+3、impl是实际的函数指针。
+相当于之前提到的invoke变量
+
+4、descriptor是用来描述当前这个block的附加信息，包括结构体大小，需要capture和dispose的变量列表等。

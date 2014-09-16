@@ -1,0 +1,31 @@
+objc的对象的根类都是NSObject，NSObject的内部实现包括一个isa指针，指向了该对象的类。每个对象都可以接受消息，对象能够接受的消息列表都保存再它对应的类中。
+
+@interface NSObject<NSObject> {
+    Class isa；
+}
+
+typedef struct objc_class *Class；
+typedef struct objc_object {
+    Class isa；
+} *id；
+
+再设计层面上，所有的类的isa指针都指向了一个根元类（root metaclass）。根元类本身的isa指针指向了自己，形成了一个闭环。
+
+
+可变与不可变
+
+对象在内存中的排布是一个结构体，该结构体大小不可以动态变化。所以无法再运行时动态给对象增加成员变量。
+相对的，对象的方法定义都保存在类的可变区域中，通过修改指针指向的指针的值，可以实现动态的为某一个类增加方法的行为（category）。
+同时也说明了category为什么只能增加方法不能添加属性。
+ps：再runtime中也可以通过category给一个类动态添加成员变量，但是并没有真正改变对象的数据结构，只是变相的增加了成员变量。
+
+Method swizzing
+
+class_replaceMethod, 当需要替换的方法可能有不存在的情况时，可以考虑使用该方法。
+method_exchangeImplementations，当需要交换2个方法的实现时使用。
+method_setImplementation 最简单的用法，当仅仅需要为一个方法设置其实现方式时使用。
+
+runtime的使用
+1、associatedObject objc_setAssociatedObject objc_getAssociatedObject
+
+2、method_Swizzing   class_addMethod method_setImplementation class_replaceMethod method_exchangeImplementations

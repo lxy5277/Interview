@@ -8,22 +8,70 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic, strong) NSArray *fontNames;
+@property (weak, nonatomic) IBOutlet UITableView *tableview;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+//    
+//    [[UIFont familyNames] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+//        self.fontNames = [self.fontNames arrayByAddingObjectsFromArray:[UIFont fontNamesForFamilyName:obj]];
+//    }];
+//    [self.tableview reloadData];
+    [self.tableview registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass(self.class)];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return [UIFont familyNames].count;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [UIFont fontNamesForFamilyName:[UIFont familyNames][section]].count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(self.class)];
+    cell.textLabel.text = [UIFont fontNamesForFamilyName:[UIFont familyNames][indexPath.section]][indexPath.row];
+    cell.textLabel.font = [UIFont fontWithName:cell.textLabel.text size:14];
+    return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return [UIFont familyNames][section];
+}
+
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+}
+
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

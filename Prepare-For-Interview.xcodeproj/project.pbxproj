@@ -25,9 +25,9 @@
 		06B2EF2C19C40C570032AEB4 /* BlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B2EF2B19C40C570032AEB4 /* BlockVC.m */; };
 		06B2EF2E19C40CA80032AEB4 /* Objc的对象模型 in Resources */ = {isa = PBXBuildFile; fileRef = 06B2EF2D19C40CA80032AEB4 /* Objc的对象模型 */; };
 		06E31C1119C591FD00020D42 /* Block的底层实现结构 in Resources */ = {isa = PBXBuildFile; fileRef = 06E31C0F19C591FD00020D42 /* Block的底层实现结构 */; };
-		06E31C1519C59B6B00020D42 /* block.c in Sources */ = {isa = PBXBuildFile; fileRef = 06E31C1319C59B6B00020D42 /* block.c */; };
 		06E31C1819C5BC5600020D42 /* 消息发送和转发 in Resources */ = {isa = PBXBuildFile; fileRef = 06E31C1619C5BC5600020D42 /* 消息发送和转发 */; };
 		06E31C1C19C5BF5700020D42 /* MessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E31C1B19C5BF5700020D42 /* MessageVC.m */; };
+		D746B55619C973890034EE70 /* EmptyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D746B55519C973890034EE70 /* EmptyClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,11 +66,11 @@
 		06B2EF2B19C40C570032AEB4 /* BlockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockVC.m; sourceTree = "<group>"; };
 		06B2EF2D19C40CA80032AEB4 /* Objc的对象模型 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Objc的对象模型"; sourceTree = "<group>"; };
 		06E31C0F19C591FD00020D42 /* Block的底层实现结构 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Block的底层实现结构"; sourceTree = "<group>"; };
-		06E31C1319C59B6B00020D42 /* block.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = block.c; sourceTree = "<group>"; };
-		06E31C1419C59B6B00020D42 /* block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = block.h; sourceTree = "<group>"; };
 		06E31C1619C5BC5600020D42 /* 消息发送和转发 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "消息发送和转发"; sourceTree = "<group>"; };
 		06E31C1A19C5BF5700020D42 /* MessageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageVC.h; sourceTree = "<group>"; };
 		06E31C1B19C5BF5700020D42 /* MessageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageVC.m; sourceTree = "<group>"; };
+		D746B55419C973890034EE70 /* EmptyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyClass.h; sourceTree = "<group>"; };
+		D746B55519C973890034EE70 /* EmptyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,8 +188,8 @@
 				06B2EF2B19C40C570032AEB4 /* BlockVC.m */,
 				06E31C1A19C5BF5700020D42 /* MessageVC.h */,
 				06E31C1B19C5BF5700020D42 /* MessageVC.m */,
-				06E31C1319C59B6B00020D42 /* block.c */,
-				06E31C1419C59B6B00020D42 /* block.h */,
+				D746B55419C973890034EE70 /* EmptyClass.h */,
+				D746B55519C973890034EE70 /* EmptyClass.m */,
 				06B2EF2D19C40CA80032AEB4 /* Objc的对象模型 */,
 				06E31C0F19C591FD00020D42 /* Block的底层实现结构 */,
 				06E31C1619C5BC5600020D42 /* 消息发送和转发 */,
@@ -301,7 +301,7 @@
 				06B2EF0719C40B490032AEB4 /* ViewController.m in Sources */,
 				06E31C1C19C5BF5700020D42 /* MessageVC.m in Sources */,
 				06B2EF0119C40B490032AEB4 /* AppDelegate.m in Sources */,
-				06E31C1519C59B6B00020D42 /* block.c in Sources */,
+				D746B55619C973890034EE70 /* EmptyClass.m in Sources */,
 				06B2EF2819C40B920032AEB4 /* ThreadVC.m in Sources */,
 				06B2EEFD19C40B490032AEB4 /* main.m in Sources */,
 			);
@@ -432,6 +432,7 @@
 				GCC_PREFIX_HEADER = "Prepare-For-Interview/Prepare-For-Interview-Prefix.pch";
 				INFOPLIST_FILE = "Prepare-For-Interview/Prepare-For-Interview-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "-all_load";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -445,6 +446,7 @@
 				GCC_PREFIX_HEADER = "Prepare-For-Interview/Prepare-For-Interview-Prefix.pch";
 				INFOPLIST_FILE = "Prepare-For-Interview/Prepare-For-Interview-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "-all_load";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
